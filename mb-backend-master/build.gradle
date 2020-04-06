@@ -1,0 +1,65 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.8.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+
+}
+
+group = 'com.backend'
+version = ''
+sourceCompatibility = '1.8'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
+
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
+
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation("org.postgresql:postgresql")
+
+
+//    compile("com.oracle:ojdbc6:11.2.0.4")
+    
+    implementation 'mysql:mysql-connector-java'
+
+    implementation "com.google.api-client:google-api-client:1.22.0"
+//    compile 'com.oracle.jdbc:ojdbc7:12.1.0.2'
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation 'com.oracle.ojdbc:ojdbc8:19.3.0.0'
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-mail')
+
+    compile group: 'org.springframework', name: 'spring-context-support', version: '5.1.9.RELEASE'
+
+    compile group: 'org.modelmapper.extensions', name: 'modelmapper-spring', version: '0.7.5'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+// https://mvnrepository.com/artifact/org.apache.commons/commons-text
+    compile group: 'org.apache.commons', name: 'commons-text', version: '1.6'
+    compile "org.apache.poi:poi:3.17"
+    compile "org.apache.poi:poi-ooxml:3.17"
+
+
+// https://mvnrepository.com/artifact/org.jsoup/jsoup
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.11.3'
+
+}
